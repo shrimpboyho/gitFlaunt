@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+<title> Git Flaunt </title>
+
+<style>
+  
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px; 
+      }
+      #signInDiv {
+        width: 300px;
+      }
+
+      #mainDiv {
+        width: 400px;
+      }
+
+      /* The white background content wrapper */
+      .container > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; 
+        -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+    .login-form {
+		margin-left: 65px;
+	  }
+	
+	  legend {
+		margin-right: -50px;
+		font-weight: bold;
+	  	color: #404040;
+	  }
+
+#imageSpot{
+ 
+    float:left;
+    
+}
+}
+  
+</style>
+
+</head>
+
+<body>
+
+        <div id = "signInDiv" class="container">
+          <div class="content">
+            <div class="row">
+              <div class="login-form">
+                <h2>Login</h2>
+                
+                  <fieldset>
+                    <div class="clearfix">
+                      <input id = "usernameField"type="text" placeholder="Username">
+                    </div>
+                    <div class="clearfix">
+                      <input type="password" placeholder="Password">
+                    </div>
+                    <button id = "signInButton" class="btn primary" >Sign in</button>
+                  </fieldset>
+                
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+              
+              
+              
+      <div id = "mainDiv" class="container">
+          
+          <div class="content">
+              <div id = "imageSpot"class = "row">
+                  
+              </div>
+              <div class="row">
+              <div class="login-form">
+                <h2 id = "nameHeader"></h2>
+                  <h4 id = "nameSecondHeader"></h4>             
+               </div>
+            </div>
+          
+          </div>
+          
+          
+          
+          
+          
+      </div>
+
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+
+<script src="http://shrimpboyho.github.io/github/lib/underscore-min.js">
+<script src="http://shrimpboyho.github.io/github/lib/base64.js">
+<script src="http://shrimpboyho.github.io/github/github.js">
+
+</html>
