@@ -44,6 +44,10 @@ function mainCode(resUser){
     $('#nameHeader').text(resUser.name); 
     $('#nameSecondHeader').text(resUser.login);
     $('#imageSpot').html('<img src= "' + resUser.avatar_url + '"></img>');
+
+    // Build the follower/following count
+
+    $('#socialStats').html("Followers: " + resUser.followers + "    Following: " + resUser.following);
     
     // Show the main div
     
