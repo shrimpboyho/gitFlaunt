@@ -43,7 +43,7 @@ function mainCode(resUser){
     
     $('#nameHeader').text(resUser.name); 
     $('#nameSecondHeader').text(resUser.login);
-    $('#imageSpot').html('<img src= "' + resUser.avatar_url + '"></img>');
+    $('#imageSpot').html('<img style= "width:80px;height:80px;" src= "' + resUser.avatar_url + '"></img>');
 
     // Build the follower/following count
 
