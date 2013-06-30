@@ -70,7 +70,7 @@ server.on('request',function(request,response){
 
 // Open the server for listening
 
-var port = process.env.PORT || 3000 ;
+var port = 3000 || process.env.PORT;
 
 server.listen(port);
 
@@ -91,9 +91,15 @@ function routingSystem(requestURL, requestInner, responseInner){
     // if a default url is specified load index.html
     
     if (requestURL == './'){
-        requestURL = './index.html';
-    }
+
+        requestURL = './public/index.html';
+        
+    }else{
+
+        requestURL = requestURL.substring(1, requestURL.length);
+        requestURL = "./public" + requestURL;
     
+    }
     // Get the file extension
     
     var extname = pathManager.extname(requestURL);
